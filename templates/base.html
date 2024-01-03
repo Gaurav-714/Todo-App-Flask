@@ -11,14 +11,38 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Demo Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: grey;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em 0;
+        }
+
+        section {
+            max-width: 700px;
+            margin: 10px auto;
+            padding: 5px 25px 5px 25px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-outline-light">
 
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><h5>TODO</h5></a>
+            <a class="navbar-brand" href="/"><h5><b>TODO</b></h5></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,10 +51,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h6>Home</h6></a>
+                        <a class="nav-link active" aria-current="page" href="/"><h6>Home</h6></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><h6>About</h6></a>
+                        <a class="nav-link active" aria-current="page" href="/about"><h6>About</h6></a>
                     </li>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

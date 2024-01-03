@@ -43,7 +43,6 @@ def update(srno):
         db.session.commit()
         return redirect('/')
 
-
     todo = Todo.query.filter_by(srno = srno).first()
     return render_template('update.html', todo = todo)
     
@@ -53,6 +52,12 @@ def delete(srno):
     db.session.delete(todo)
     db.session.commit()
     return redirect('/')
+
+@app.route('/about', methods=['GET', 'POST'])
+def about():
+    if request.method == 'POST':
+        return redirect('/about')
+    return render_template('about.html')
 
 
 if __name__ == "__main__":

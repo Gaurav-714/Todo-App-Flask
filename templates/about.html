@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+    
+
+    <header>
+        <h1>About ToDo App</h1>
+    </header>
+    <section action="/about" method="POST">
+        <h2>Welcome to ToDo App</h2>
+        <p>
+            ToDo App is a simple and effective tool to help you organize your tasks and manage your daily activities. 
+            Whether you're a professional managing work tasks or a student keeping track of assignments, ToDo App has you covered.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Easy task creation and deletion</li>
+            <li>Prioritize tasks with different levels of importance</li>
+            <li>Mark tasks as completed</li>
+            <li>Clean and user-friendly interface</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions or feedback, feel free to contact us at <a href="mailto:info@todoapp.com">info@todoapp.com</a>.
+        </p>
+    </section>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+{% endblock body %}
